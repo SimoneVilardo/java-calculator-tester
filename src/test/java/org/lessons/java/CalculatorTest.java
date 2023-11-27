@@ -36,14 +36,14 @@ public class CalculatorTest {
 	}
 	
 	@Test
-	public void testDivisioneNoEccezioni() throws Exception{
+	public void testDivisioneNoEccezioni() {
 		
 		assertDoesNotThrow(() -> c.divisione(num1, num2), "Eccezione generata");
 		
 	}
 	
 	@Test
-	public void testDivisioneEccezioni() throws Exception{
+	public void testDivisioneEccezioni(){
 		
 		assertThrows(Exception.class , () -> c.divisione(num1, 0), "Non è stata lanciata un eccezione");
 		
